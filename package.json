@@ -1,0 +1,15 @@
+{
+  "name": "hyperapp-todo",
+  "private": true,
+  "scripts": {
+    "start": "parcel ./src/index.html --out-dir ./dist"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "parcel": "^1.9.7"
+  },
+  "dependencies": {
+    "hyperapp": "^1.2.8",
+    "images": "^3.0.1"
+  }
+}
