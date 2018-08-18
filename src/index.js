@@ -5,8 +5,9 @@ import TodoList from "./components/todo-list"
 import logo from "./images/favicon.png"
 
 const state = {
-  todos: [{ text: "clean the house" }, { text: "buy milk" }],
-  todoText: ""
+  todos: [{ id: 1, text: "clean the house" }, { id: 2, text: "buy milk" }],
+  todoText: "",
+  nextId: 3
 }
 
 const actions = {
@@ -15,7 +16,8 @@ const actions = {
 
     return {
       todoText: "",
-      todos: [...state.todos, { text: state.todoText }]
+      todos: [...state.todos, { id: state.nextId, text: state.todoText }],
+      nextId: state.nextId + 1
     }
   },
   updateText: text => state => ({ todoText: text }),
