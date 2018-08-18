@@ -29,9 +29,9 @@ const view = (state, actions) => (
     <img class="Logo" src={logo} alt="HyperApp logo" />
     <h1 class="ToDo-Header">HyperApp To Do</h1>
     <div class="ToDo-Container">
-      <TodoList todos={state.todos} actions={actions} />
-      <TodoInput text={state.todoText} actions={actions} />
-      <TodoButton actions={actions} />
+      <TodoList todos={state.todos} />
+      <TodoInput text={state.todoText} />
+      <TodoButton />
     </div>
   </div>
 )

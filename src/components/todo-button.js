@@ -1,7 +1,7 @@
 import { h } from "hyperapp"
 
-const TodoButton = ({ actions }) => (
-  <div class="ToDo-Add" onclick={e => actions.add()}>
+const TodoButton = () => (_state, actions) => (
+  <div class="ToDo-Add" onclick={_e => actions.add()}>
     +
   </div>
 )

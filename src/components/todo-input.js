@@ -1,6 +1,6 @@
 import { h } from "hyperapp"
 
-const TodoInput = ({ text, actions }) => (
+const TodoInput = ({ text }) => (_state, actions) => (
   <input
     type="text"
     onkeyup={e => {

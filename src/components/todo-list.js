@@ -1,10 +1,10 @@
 import { h } from "hyperapp"
 import TodoItem from "./todo-item"
 
-const TodoList = ({ todos, actions }) => (
+const TodoList = ({ todos }) => (_state, actions) => (
   <div class="ToDo-Content">
     {todos.map((todo, idx) => (
-      <TodoItem idx={idx} todo={todo} actions={actions} />
+      <TodoItem idx={idx} todo={todo} />
     ))}
   </div>
 )
